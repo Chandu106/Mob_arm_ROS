@@ -24,7 +24,7 @@
             </geometry>
             <origin xyz = "0 0 ${arm_base_height / 2.0}" rpy = "0 0 0" />
         </collision>
-        <xacro:box_inertia m = "0.5" l = "${3*arm_base_length}" w = "${3*arm_base_width}" h = "${3*arm_base_height}"
+        <xacro:box_inertia m = "0.5" l = "${4*arm_base_length}" w = "${4*arm_base_width}" h = "${4*arm_base_height}"
                            xyz = "0 0 ${arm_base_height / 2.0}" rpy = "0 0 0" />
     </link>   
 
@@ -42,7 +42,7 @@
             </geometry>
             <origin xyz = "0 0 ${forearm_length / 2.0}" rpy = "0 0 0" /> 
         </collision>
-        <xacro:wheel_inertia m = "0.3" r = "${3*forearm_radius}" l = "${3*forearm_length}"
+        <xacro:wheel_inertia m = "0.3" r = "${4*forearm_radius}" l = "${4*forearm_length}"
                              xyz = "0 0 ${forearm_length / 2.0}" rpy = "0 0 0" />
     </link> 
 
@@ -60,7 +60,7 @@
             </geometry>
             <origin xyz = "0 0 ${hand_length / 2.0}" rpy = "0 0 0" />       
         </collision>
-        <xacro:wheel_inertia m = "0.3" r = "${3*hand_radius}" l = "${3*hand_length}"
+        <xacro:wheel_inertia m = "0.3" r = "${4*hand_radius}" l = "${4*hand_length}"
                              xyz = "0 0 ${hand_length / 2.0}" rpy = "0 0 0" />
     </link>
 
